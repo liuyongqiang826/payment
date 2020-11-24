@@ -1,0 +1,325 @@
+18:01:20.370  INFO [pocket,,] [16512] [background-preinit][org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 6.1.5.Final
+18:01:20.450  INFO [pocket,,] [16512] [main][org.springframework.boot.StartupInfoLogger:55]: Starting PaymentApplication using Java 11 on DESKTOP-O164E7I with PID 16512 (D:\springcloud workplace\payment\target\classes started by black in D:\springcloud workplace\payment)
+18:01:20.454  INFO [pocket,,] [16512] [main][org.springframework.boot.SpringApplication:652]: No active profile set, falling back to default profiles: default
+18:01:21.405  INFO [pocket,,] [16512] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:252]: Multiple Spring Data modules found, entering strict repository configuration mode!
+18:01:21.408  INFO [pocket,,] [16512] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:130]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:01:21.432  INFO [pocket,,] [16512] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:190]: Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+18:01:21.627  INFO [pocket,,] [16512] [main][org.springframework.cloud.context.scope.GenericScope:295]: BeanFactory id=0714ad64-1782-3b5b-995a-5e66f012d373
+18:01:21.838  WARN [pocket,,] [16512] [main][io.undertow.websockets.jsr.Bootstrap:68]: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+18:01:21.862  INFO [pocket,,] [16512] [main][io.undertow.servlet.spec.ServletContextImpl:364]: Initializing Spring embedded WebApplicationContext
+18:01:21.862  INFO [pocket,,] [16512] [main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289]: Root WebApplicationContext: initialization completed in 1353 ms
+18:01:22.569  INFO [pocket,,] [16512] [main][org.redisson.Version:41]: Redisson 3.11.5
+18:01:23.732  INFO [pocket,,] [16512] [redisson-netty-4-11][org.redisson.connection.pool.ConnectionPool$1:168]: 1 connections initialized for 10.238.8.204/10.238.8.204:6379
+18:01:24.715  INFO [pocket,,] [16512] [redisson-netty-4-19][org.redisson.connection.pool.ConnectionPool$1:168]: 24 connections initialized for 10.238.8.204/10.238.8.204:6379
+18:01:25.011  INFO [pocket,,] [16512] [main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181]: Initializing ExecutorService 'applicationTaskExecutor'
+18:01:25.596  INFO [pocket,,] [16512] [main][org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration:67]: Eureka HTTP Client uses RestTemplate.
+18:01:26.066  INFO [pocket,,] [16512] [main][org.springframework.cloud.netflix.eureka.InstanceInfoFactory:78]: Setting initial instance status as: UP. This may be too early for the instance to advertise itself as available. You would instead want to control this via a healthcheck handler.
+18:01:26.092  INFO [pocket,,] [16512] [main][com.netflix.discovery.DiscoveryClient:371]: Initializing Eureka in region us-east-1
+18:01:26.095  INFO [pocket,,] [16512] [main][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43]: Resolving eureka endpoints via configuration
+18:01:26.328  INFO [pocket,,] [16512] [main][com.netflix.discovery.DiscoveryClient:1004]: Disable delta property : false
+18:01:26.328  INFO [pocket,,] [16512] [main][com.netflix.discovery.DiscoveryClient:1005]: Single vip registry refresh property : null
+18:01:26.328  INFO [pocket,,] [16512] [main][com.netflix.discovery.DiscoveryClient:1006]: Force full registry fetch : false
+18:01:26.328  INFO [pocket,,] [16512] [main][com.netflix.discovery.DiscoveryClient:1007]: Application is null : false
+18:01:26.329  INFO [pocket,,] [16512] [main][com.netflix.discovery.DiscoveryClient:1008]: Registered Applications size is zero : true
+18:01:26.329  INFO [pocket,,] [16512] [main][com.netflix.discovery.DiscoveryClient:1010]: Application version is -1: true
+18:01:26.329  INFO [pocket,,] [16512] [main][com.netflix.discovery.DiscoveryClient:1093]: Getting all instance registry info from the eureka server
+18:01:26.569  INFO [pocket,,] [16512] [main][com.netflix.discovery.DiscoveryClient:1102]: The response status is 200
+18:01:26.574  INFO [pocket,,] [16512] [main][com.netflix.discovery.DiscoveryClient:1317]: Starting heartbeat executor: renew interval is: 5
+18:01:26.576  INFO [pocket,,] [16512] [main][com.netflix.discovery.InstanceInfoReplicator:60]: InstanceInfoReplicator onDemand update allowed rate per min is 4
+18:01:26.581  INFO [pocket,,] [16512] [main][com.netflix.discovery.DiscoveryClient:491]: Discovery Client initialized at timestamp 1605607286580 with initial instances count: 3
+18:01:26.582  INFO [pocket,,] [16512] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:41]: Registering application PAYMENT with eureka with status UP
+18:01:26.592  INFO [pocket,,] [16512] [main][org.xnio.Xnio:95]: XNIO version 3.8.0.Final
+18:01:26.597  INFO [pocket,,] [16512] [main][org.xnio.nio.NioXnio:59]: XNIO NIO Implementation Version 3.8.0.Final
+18:01:26.615  INFO [pocket,,] [16512] [main][org.jboss.threads.Version:52]: JBoss Threads version 3.1.0.Final
+18:01:26.648  INFO [pocket,,] [16512] [main][io.undertow.Undertow:117]: starting server: Undertow - 2.1.3.Final
+18:01:26.704  INFO [pocket,,] [16512] [main][org.springframework.boot.web.embedded.undertow.UndertowWebServer:133]: Undertow started on port(s) 8144 (http)
+18:01:26.705  INFO [pocket,,] [16512] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration:145]: Updating port to 8144
+18:01:28.397  INFO [pocket,,] [16512] [main][org.springframework.boot.StartupInfoLogger:61]: Started PaymentApplication in 8.874 seconds (JVM running for 10.265)
+18:01:31.649  INFO [pocket,,] [16512] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:894]: DiscoveryClient_PAYMENT/47.98.120.110:8144 - Re-registering apps/PAYMENT
+18:01:31.649  INFO [pocket,,] [16512] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:870]: DiscoveryClient_PAYMENT/47.98.120.110:8144: registering service...
+18:01:31.753  INFO [pocket,,] [16512] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:879]: DiscoveryClient_PAYMENT/47.98.120.110:8144 - registration status: 204
+18:01:45.063  INFO [pocket,,] [16512] [XNIO-2 task-1][io.undertow.servlet.spec.ServletContextImpl:364]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:01:45.063  INFO [pocket,,] [16512] [XNIO-2 task-1][org.springframework.web.servlet.FrameworkServlet:525]: Initializing Servlet 'dispatcherServlet'
+18:01:45.065  INFO [pocket,,] [16512] [XNIO-2 task-1][org.springframework.web.servlet.FrameworkServlet:547]: Completed initialization in 2 ms
+18:01:45.756  INFO [pocket,,] [16512] [XNIO-2 task-1][com.hope.payment.controller.trade.DepositTradeController:44]: test application tryLock: {}
+18:02:06.326 ERROR [pocket,,] [16512] [XNIO-2 task-1][io.undertow.servlet.api.LoggingExceptionHandler:80]: UT005023: Exception handling request to /withdraw
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:370) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2019) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1558) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1449) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.lang.NullPointerException
+	at com.hope.payment.controller.trade.WithdrawTradeController.withdraw(WithdrawTradeController.java:38) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:802) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	... 49 more
+
+18:02:06.964 ERROR [pocket,,] [16512] [XNIO-2 task-1][io.undertow.servlet.api.LoggingExceptionHandler:80]: UT005023: Exception handling request to /withdraw
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:370) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2019) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1558) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1449) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.lang.NullPointerException
+	at com.hope.payment.controller.trade.WithdrawTradeController.withdraw(WithdrawTradeController.java:38) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:802) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	... 49 more
+
+18:02:08.086 ERROR [pocket,,] [16512] [XNIO-2 task-1][io.undertow.servlet.api.LoggingExceptionHandler:80]: UT005023: Exception handling request to /withdraw
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:370) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2019) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1558) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1449) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.lang.NullPointerException
+	at com.hope.payment.controller.trade.WithdrawTradeController.withdraw(WithdrawTradeController.java:38) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:802) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	... 49 more
+
+18:02:09.023 ERROR [pocket,,] [16512] [XNIO-2 task-1][io.undertow.servlet.api.LoggingExceptionHandler:80]: UT005023: Exception handling request to /withdraw
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:370) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2019) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1558) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1449) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.lang.NullPointerException
+	at com.hope.payment.controller.trade.WithdrawTradeController.withdraw(WithdrawTradeController.java:38) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:802) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	... 49 more
+
+18:06:26.332  INFO [pocket,,] [16512] [AsyncResolver-bootstrap-executor-0][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43]: Resolving eureka endpoints via configuration

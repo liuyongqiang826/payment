@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.hope.PaymentApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.473 s - in com.hope.PaymentApplicationTests

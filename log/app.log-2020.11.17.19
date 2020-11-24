@@ -1,0 +1,683 @@
+19:03:08.150  INFO [pocket,,] [7432] [background-preinit][org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 6.1.5.Final
+19:03:08.237  INFO [pocket,,] [7432] [main][org.springframework.boot.StartupInfoLogger:55]: Starting PaymentApplication using Java 11 on DESKTOP-O164E7I with PID 7432 (D:\springcloud workplace\payment\target\classes started by black in D:\springcloud workplace\payment)
+19:03:08.246  INFO [pocket,,] [7432] [main][org.springframework.boot.SpringApplication:652]: No active profile set, falling back to default profiles: default
+19:03:09.317  INFO [pocket,,] [7432] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:252]: Multiple Spring Data modules found, entering strict repository configuration mode!
+19:03:09.320  INFO [pocket,,] [7432] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:130]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:03:09.352  INFO [pocket,,] [7432] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:190]: Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+19:03:09.612  INFO [pocket,,] [7432] [main][org.springframework.cloud.context.scope.GenericScope:295]: BeanFactory id=0714ad64-1782-3b5b-995a-5e66f012d373
+19:03:09.891  WARN [pocket,,] [7432] [main][io.undertow.websockets.jsr.Bootstrap:68]: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+19:03:09.916  INFO [pocket,,] [7432] [main][io.undertow.servlet.spec.ServletContextImpl:364]: Initializing Spring embedded WebApplicationContext
+19:03:09.916  INFO [pocket,,] [7432] [main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289]: Root WebApplicationContext: initialization completed in 1556 ms
+19:03:09.969  WARN [pocket,,] [7432] [main][org.springframework.context.support.AbstractApplicationContext:596]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'balanceLocalCache': Invocation of init method failed; nested exception is java.lang.IllegalStateException: refreshAfterWrite requires a LoadingCache
+19:03:09.978  INFO [pocket,,] [7432] [main][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136]: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:03:09.986 ERROR [pocket,,] [7432] [main][org.springframework.boot.SpringApplication:838]: Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'balanceLocalCache': Invocation of init method failed; nested exception is java.lang.IllegalStateException: refreshAfterWrite requires a LoadingCache
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1780) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:751) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:410) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1280) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1269) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at com.hope.payment.PaymentApplication.main(PaymentApplication.java:10) ~[classes/:?]
+Caused by: java.lang.IllegalStateException: refreshAfterWrite requires a LoadingCache
+	at com.github.benmanes.caffeine.cache.Caffeine.requireState(Caffeine.java:200) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.Caffeine.requireNonLoadingCache(Caffeine.java:1118) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.Caffeine.build(Caffeine.java:990) ~[caffeine-2.8.5.jar:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.init(BalanceLocalCache.java:20) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	... 19 more
+
+19:11:45.494  INFO [pocket,,] [13460] [background-preinit][org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 6.1.5.Final
+19:11:45.570  INFO [pocket,,] [13460] [main][org.springframework.boot.StartupInfoLogger:55]: Starting PaymentApplication using Java 11 on DESKTOP-O164E7I with PID 13460 (D:\springcloud workplace\payment\target\classes started by black in D:\springcloud workplace\payment)
+19:11:45.575  INFO [pocket,,] [13460] [main][org.springframework.boot.SpringApplication:652]: No active profile set, falling back to default profiles: default
+19:11:46.431  INFO [pocket,,] [13460] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:252]: Multiple Spring Data modules found, entering strict repository configuration mode!
+19:11:46.433  INFO [pocket,,] [13460] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:130]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:11:46.452  INFO [pocket,,] [13460] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:190]: Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+19:11:46.664  INFO [pocket,,] [13460] [main][org.springframework.cloud.context.scope.GenericScope:295]: BeanFactory id=0714ad64-1782-3b5b-995a-5e66f012d373
+19:11:46.865  WARN [pocket,,] [13460] [main][io.undertow.websockets.jsr.Bootstrap:68]: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+19:11:46.885  INFO [pocket,,] [13460] [main][io.undertow.servlet.spec.ServletContextImpl:364]: Initializing Spring embedded WebApplicationContext
+19:11:46.885  INFO [pocket,,] [13460] [main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289]: Root WebApplicationContext: initialization completed in 1259 ms
+19:11:47.560  INFO [pocket,,] [13460] [main][org.redisson.Version:41]: Redisson 3.11.5
+19:11:48.764  INFO [pocket,,] [13460] [redisson-netty-4-6][org.redisson.connection.pool.ConnectionPool$1:168]: 1 connections initialized for 10.238.8.204/10.238.8.204:6379
+19:11:49.773  INFO [pocket,,] [13460] [redisson-netty-4-19][org.redisson.connection.pool.ConnectionPool$1:168]: 24 connections initialized for 10.238.8.204/10.238.8.204:6379
+19:11:50.058  INFO [pocket,,] [13460] [main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181]: Initializing ExecutorService 'applicationTaskExecutor'
+19:11:50.632  INFO [pocket,,] [13460] [main][org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration:67]: Eureka HTTP Client uses RestTemplate.
+19:11:51.109  INFO [pocket,,] [13460] [main][org.springframework.cloud.netflix.eureka.InstanceInfoFactory:78]: Setting initial instance status as: UP. This may be too early for the instance to advertise itself as available. You would instead want to control this via a healthcheck handler.
+19:11:51.140  INFO [pocket,,] [13460] [main][com.netflix.discovery.DiscoveryClient:371]: Initializing Eureka in region us-east-1
+19:11:51.144  INFO [pocket,,] [13460] [main][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43]: Resolving eureka endpoints via configuration
+19:11:51.360  INFO [pocket,,] [13460] [main][com.netflix.discovery.DiscoveryClient:1004]: Disable delta property : false
+19:11:51.360  INFO [pocket,,] [13460] [main][com.netflix.discovery.DiscoveryClient:1005]: Single vip registry refresh property : null
+19:11:51.360  INFO [pocket,,] [13460] [main][com.netflix.discovery.DiscoveryClient:1006]: Force full registry fetch : false
+19:11:51.360  INFO [pocket,,] [13460] [main][com.netflix.discovery.DiscoveryClient:1007]: Application is null : false
+19:11:51.361  INFO [pocket,,] [13460] [main][com.netflix.discovery.DiscoveryClient:1008]: Registered Applications size is zero : true
+19:11:51.361  INFO [pocket,,] [13460] [main][com.netflix.discovery.DiscoveryClient:1010]: Application version is -1: true
+19:11:51.361  INFO [pocket,,] [13460] [main][com.netflix.discovery.DiscoveryClient:1093]: Getting all instance registry info from the eureka server
+19:11:51.694  INFO [pocket,,] [13460] [main][com.netflix.discovery.DiscoveryClient:1102]: The response status is 200
+19:11:51.696  INFO [pocket,,] [13460] [main][com.netflix.discovery.DiscoveryClient:1317]: Starting heartbeat executor: renew interval is: 5
+19:11:51.699  INFO [pocket,,] [13460] [main][com.netflix.discovery.InstanceInfoReplicator:60]: InstanceInfoReplicator onDemand update allowed rate per min is 4
+19:11:51.706  INFO [pocket,,] [13460] [main][com.netflix.discovery.DiscoveryClient:491]: Discovery Client initialized at timestamp 1605611511703 with initial instances count: 3
+19:11:51.707  INFO [pocket,,] [13460] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:41]: Registering application PAYMENT with eureka with status UP
+19:11:51.718  INFO [pocket,,] [13460] [main][org.xnio.Xnio:95]: XNIO version 3.8.0.Final
+19:11:51.726  INFO [pocket,,] [13460] [main][org.xnio.nio.NioXnio:59]: XNIO NIO Implementation Version 3.8.0.Final
+19:11:51.755  INFO [pocket,,] [13460] [main][org.jboss.threads.Version:52]: JBoss Threads version 3.1.0.Final
+19:11:51.792  INFO [pocket,,] [13460] [main][io.undertow.Undertow:117]: starting server: Undertow - 2.1.3.Final
+19:11:51.839  INFO [pocket,,] [13460] [main][org.springframework.boot.web.embedded.undertow.UndertowWebServer:133]: Undertow started on port(s) 8144 (http)
+19:11:51.839  INFO [pocket,,] [13460] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration:145]: Updating port to 8144
+19:11:54.609  INFO [pocket,,] [13460] [main][org.springframework.boot.StartupInfoLogger:61]: Started PaymentApplication in 9.758 seconds (JVM running for 11.171)
+19:11:56.776  INFO [pocket,,] [13460] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:894]: DiscoveryClient_PAYMENT/47.98.120.110:8144 - Re-registering apps/PAYMENT
+19:11:56.776  INFO [pocket,,] [13460] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:870]: DiscoveryClient_PAYMENT/47.98.120.110:8144: registering service...
+19:11:56.914  INFO [pocket,,] [13460] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:879]: DiscoveryClient_PAYMENT/47.98.120.110:8144 - registration status: 204
+19:12:13.846  INFO [pocket,,] [13460] [XNIO-2 task-1][io.undertow.servlet.spec.ServletContextImpl:364]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:12:13.846  INFO [pocket,,] [13460] [XNIO-2 task-1][org.springframework.web.servlet.FrameworkServlet:525]: Initializing Servlet 'dispatcherServlet'
+19:12:13.847  INFO [pocket,,] [13460] [XNIO-2 task-1][org.springframework.web.servlet.FrameworkServlet:547]: Completed initialization in 1 ms
+19:12:14.606  INFO [pocket,,] [13460] [XNIO-2 task-1][com.hope.payment.controller.trade.DepositTradeController:44]: test application tryLock: {}
+19:12:59.906  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:00.763  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:02.524  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:03.489  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:04.142  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:05.661  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:06.427  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:06.907  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:07.456  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:08.166  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:08.734  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:09.173  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:09.760  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:10.547  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:11.193  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:11.789  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:15.743  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:16.467  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:18.427  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:54.468  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:13:55.146  WARN [pocket,,] [13460] [ForkJoinPool.commonPool-worker-3][com.github.benmanes.caffeine.cache.BoundedLocalCache:1208]: Exception thrown during refresh
+
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.reload(CacheLoader.java:166) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.CacheLoader.lambda$asyncReload$2(CacheLoader.java:190) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700) ~[?:?]
+	... 6 more
+
+19:17:02.131  INFO [pocket,,] [17536] [background-preinit][org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 6.1.5.Final
+19:17:02.196  INFO [pocket,,] [17536] [main][org.springframework.boot.StartupInfoLogger:55]: Starting PaymentApplication using Java 11 on DESKTOP-O164E7I with PID 17536 (D:\springcloud workplace\payment\target\classes started by black in D:\springcloud workplace\payment)
+19:17:02.201  INFO [pocket,,] [17536] [main][org.springframework.boot.SpringApplication:652]: No active profile set, falling back to default profiles: default
+19:17:02.917  INFO [pocket,,] [17536] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:252]: Multiple Spring Data modules found, entering strict repository configuration mode!
+19:17:02.919  INFO [pocket,,] [17536] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:130]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:17:02.937  INFO [pocket,,] [17536] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:190]: Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+19:17:03.152  INFO [pocket,,] [17536] [main][org.springframework.cloud.context.scope.GenericScope:295]: BeanFactory id=0714ad64-1782-3b5b-995a-5e66f012d373
+19:17:03.337  WARN [pocket,,] [17536] [main][io.undertow.websockets.jsr.Bootstrap:68]: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+19:17:03.355  INFO [pocket,,] [17536] [main][io.undertow.servlet.spec.ServletContextImpl:364]: Initializing Spring embedded WebApplicationContext
+19:17:03.355  INFO [pocket,,] [17536] [main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289]: Root WebApplicationContext: initialization completed in 1108 ms
+19:17:03.930  INFO [pocket,,] [17536] [main][org.redisson.Version:41]: Redisson 3.11.5
+19:17:05.079  INFO [pocket,,] [17536] [redisson-netty-4-29][org.redisson.connection.pool.ConnectionPool$1:168]: 1 connections initialized for 10.238.8.204/10.238.8.204:6379
+19:17:06.165  INFO [pocket,,] [17536] [redisson-netty-4-19][org.redisson.connection.pool.ConnectionPool$1:168]: 24 connections initialized for 10.238.8.204/10.238.8.204:6379
+19:17:06.466  INFO [pocket,,] [17536] [main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181]: Initializing ExecutorService 'applicationTaskExecutor'
+19:17:07.117  INFO [pocket,,] [17536] [main][org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration:67]: Eureka HTTP Client uses RestTemplate.
+19:17:07.638  INFO [pocket,,] [17536] [main][org.springframework.cloud.netflix.eureka.InstanceInfoFactory:78]: Setting initial instance status as: UP. This may be too early for the instance to advertise itself as available. You would instead want to control this via a healthcheck handler.
+19:17:07.666  INFO [pocket,,] [17536] [main][com.netflix.discovery.DiscoveryClient:371]: Initializing Eureka in region us-east-1
+19:17:07.670  INFO [pocket,,] [17536] [main][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43]: Resolving eureka endpoints via configuration
+19:17:07.915  INFO [pocket,,] [17536] [main][com.netflix.discovery.DiscoveryClient:1004]: Disable delta property : false
+19:17:07.915  INFO [pocket,,] [17536] [main][com.netflix.discovery.DiscoveryClient:1005]: Single vip registry refresh property : null
+19:17:07.916  INFO [pocket,,] [17536] [main][com.netflix.discovery.DiscoveryClient:1006]: Force full registry fetch : false
+19:17:07.916  INFO [pocket,,] [17536] [main][com.netflix.discovery.DiscoveryClient:1007]: Application is null : false
+19:17:07.916  INFO [pocket,,] [17536] [main][com.netflix.discovery.DiscoveryClient:1008]: Registered Applications size is zero : true
+19:17:07.916  INFO [pocket,,] [17536] [main][com.netflix.discovery.DiscoveryClient:1010]: Application version is -1: true
+19:17:07.916  INFO [pocket,,] [17536] [main][com.netflix.discovery.DiscoveryClient:1093]: Getting all instance registry info from the eureka server
+19:17:08.294  INFO [pocket,,] [17536] [main][com.netflix.discovery.DiscoveryClient:1102]: The response status is 200
+19:17:08.302  INFO [pocket,,] [17536] [main][com.netflix.discovery.DiscoveryClient:1317]: Starting heartbeat executor: renew interval is: 5
+19:17:08.310  INFO [pocket,,] [17536] [main][com.netflix.discovery.InstanceInfoReplicator:60]: InstanceInfoReplicator onDemand update allowed rate per min is 4
+19:17:08.319  INFO [pocket,,] [17536] [main][com.netflix.discovery.DiscoveryClient:491]: Discovery Client initialized at timestamp 1605611828318 with initial instances count: 3
+19:17:08.320  INFO [pocket,,] [17536] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:41]: Registering application PAYMENT with eureka with status UP
+19:17:08.330  INFO [pocket,,] [17536] [main][org.xnio.Xnio:95]: XNIO version 3.8.0.Final
+19:17:08.335  INFO [pocket,,] [17536] [main][org.xnio.nio.NioXnio:59]: XNIO NIO Implementation Version 3.8.0.Final
+19:17:08.353  INFO [pocket,,] [17536] [main][org.jboss.threads.Version:52]: JBoss Threads version 3.1.0.Final
+19:17:08.386  INFO [pocket,,] [17536] [main][io.undertow.Undertow:117]: starting server: Undertow - 2.1.3.Final
+19:17:08.430  INFO [pocket,,] [17536] [main][org.springframework.boot.web.embedded.undertow.UndertowWebServer:133]: Undertow started on port(s) 8144 (http)
+19:17:08.431  INFO [pocket,,] [17536] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration:145]: Updating port to 8144
+19:17:11.064  INFO [pocket,,] [17536] [main][org.springframework.boot.StartupInfoLogger:61]: Started PaymentApplication in 9.592 seconds (JVM running for 11.023)
+19:17:13.370  INFO [pocket,,] [17536] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:894]: DiscoveryClient_PAYMENT/47.98.120.110:8144 - Re-registering apps/PAYMENT
+19:17:13.371  INFO [pocket,,] [17536] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:870]: DiscoveryClient_PAYMENT/47.98.120.110:8144: registering service...
+19:17:13.484  INFO [pocket,,] [17536] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:879]: DiscoveryClient_PAYMENT/47.98.120.110:8144 - registration status: 204
+19:17:46.081  INFO [pocket,,] [17536] [XNIO-2 task-1][io.undertow.servlet.spec.ServletContextImpl:364]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:17:46.081  INFO [pocket,,] [17536] [XNIO-2 task-1][org.springframework.web.servlet.FrameworkServlet:525]: Initializing Servlet 'dispatcherServlet'
+19:17:46.082  INFO [pocket,,] [17536] [XNIO-2 task-1][org.springframework.web.servlet.FrameworkServlet:547]: Completed initialization in 1 ms
+19:17:46.505 ERROR [pocket,,] [17536] [XNIO-2 task-1][io.undertow.servlet.api.LoggingExceptionHandler:80]: UT005023: Exception handling request to /withdraw
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99) ~[undertow-servlet-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:370) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830) ~[undertow-core-2.1.3.Final.jar:2.1.3.Final]
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2019) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1558) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1423) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.lang.NullPointerException
+	at java.math.BigDecimal.<init>(BigDecimal.java:828) ~[?:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.lambda$0(BalanceLocalCache.java:30) ~[classes/:?]
+	at com.github.benmanes.caffeine.cache.LocalLoadingCache.lambda$newMappingFunction$2(LocalLoadingCache.java:141) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.BoundedLocalCache.lambda$doComputeIfAbsent$14(BoundedLocalCache.java:2344) ~[caffeine-2.8.5.jar:?]
+	at java.util.concurrent.ConcurrentHashMap.compute(ConcurrentHashMap.java:1908) ~[?:?]
+	at com.github.benmanes.caffeine.cache.BoundedLocalCache.doComputeIfAbsent(BoundedLocalCache.java:2342) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.BoundedLocalCache.computeIfAbsent(BoundedLocalCache.java:2325) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.LocalCache.computeIfAbsent(LocalCache.java:108) ~[caffeine-2.8.5.jar:?]
+	at com.github.benmanes.caffeine.cache.LocalLoadingCache.get(LocalLoadingCache.java:54) ~[caffeine-2.8.5.jar:?]
+	at com.hope.payment.cache.localcache.BalanceLocalCache.get(BalanceLocalCache.java:38) ~[classes/:?]
+	at com.hope.payment.controller.trade.WithdrawTradeController.withdraw(WithdrawTradeController.java:35) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:802) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	... 49 more
+
+19:22:07.918  INFO [pocket,,] [17536] [AsyncResolver-bootstrap-executor-0][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43]: Resolving eureka endpoints via configuration
+19:27:07.920  INFO [pocket,,] [17536] [AsyncResolver-bootstrap-executor-0][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43]: Resolving eureka endpoints via configuration
+19:37:35.381  INFO [pocket,,] [5784] [background-preinit][org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 6.1.5.Final
+19:37:35.431  INFO [pocket,,] [5784] [main][org.springframework.boot.StartupInfoLogger:55]: Starting PaymentApplication using Java 11 on DESKTOP-O164E7I with PID 5784 (D:\springcloud workplace\payment\target\classes started by black in D:\springcloud workplace\payment)
+19:37:35.435  INFO [pocket,,] [5784] [main][org.springframework.boot.SpringApplication:652]: No active profile set, falling back to default profiles: default
+19:37:36.361  INFO [pocket,,] [5784] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:252]: Multiple Spring Data modules found, entering strict repository configuration mode!
+19:37:36.365  INFO [pocket,,] [5784] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:130]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:37:36.406  INFO [pocket,,] [5784] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:190]: Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+19:37:36.642  INFO [pocket,,] [5784] [main][org.springframework.cloud.context.scope.GenericScope:295]: BeanFactory id=0714ad64-1782-3b5b-995a-5e66f012d373
+19:37:36.892  WARN [pocket,,] [5784] [main][io.undertow.websockets.jsr.Bootstrap:68]: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+19:37:36.920  INFO [pocket,,] [5784] [main][io.undertow.servlet.spec.ServletContextImpl:364]: Initializing Spring embedded WebApplicationContext
+19:37:36.920  INFO [pocket,,] [5784] [main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289]: Root WebApplicationContext: initialization completed in 1438 ms
+19:37:37.998  INFO [pocket,,] [5784] [main][org.redisson.Version:41]: Redisson 3.11.5
+19:37:39.629  INFO [pocket,,] [5784] [redisson-netty-4-10][org.redisson.connection.pool.ConnectionPool$1:168]: 1 connections initialized for 10.238.8.204/10.238.8.204:6379
+19:37:40.638  INFO [pocket,,] [5784] [redisson-netty-4-19][org.redisson.connection.pool.ConnectionPool$1:168]: 24 connections initialized for 10.238.8.204/10.238.8.204:6379
+19:37:41.262  INFO [pocket,,] [5784] [main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181]: Initializing ExecutorService 'applicationTaskExecutor'
+19:37:42.350  INFO [pocket,,] [5784] [main][org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration:67]: Eureka HTTP Client uses RestTemplate.
+19:37:43.511  INFO [pocket,,] [5784] [main][org.springframework.cloud.netflix.eureka.InstanceInfoFactory:78]: Setting initial instance status as: UP. This may be too early for the instance to advertise itself as available. You would instead want to control this via a healthcheck handler.
+19:37:43.577  INFO [pocket,,] [5784] [main][com.netflix.discovery.DiscoveryClient:371]: Initializing Eureka in region us-east-1
+19:37:43.584  INFO [pocket,,] [5784] [main][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43]: Resolving eureka endpoints via configuration
+19:37:44.077  INFO [pocket,,] [5784] [main][com.netflix.discovery.DiscoveryClient:1004]: Disable delta property : false
+19:37:44.079  INFO [pocket,,] [5784] [main][com.netflix.discovery.DiscoveryClient:1005]: Single vip registry refresh property : null
+19:37:44.080  INFO [pocket,,] [5784] [main][com.netflix.discovery.DiscoveryClient:1006]: Force full registry fetch : false
+19:37:44.080  INFO [pocket,,] [5784] [main][com.netflix.discovery.DiscoveryClient:1007]: Application is null : false
+19:37:44.082  INFO [pocket,,] [5784] [main][com.netflix.discovery.DiscoveryClient:1008]: Registered Applications size is zero : true
+19:37:44.083  INFO [pocket,,] [5784] [main][com.netflix.discovery.DiscoveryClient:1010]: Application version is -1: true
+19:37:44.084  INFO [pocket,,] [5784] [main][com.netflix.discovery.DiscoveryClient:1093]: Getting all instance registry info from the eureka server
+19:37:44.531  INFO [pocket,,] [5784] [main][com.netflix.discovery.DiscoveryClient:1102]: The response status is 200
+19:37:44.538  INFO [pocket,,] [5784] [main][com.netflix.discovery.DiscoveryClient:1317]: Starting heartbeat executor: renew interval is: 5
+19:37:44.544  INFO [pocket,,] [5784] [main][com.netflix.discovery.InstanceInfoReplicator:60]: InstanceInfoReplicator onDemand update allowed rate per min is 4
+19:37:44.559  INFO [pocket,,] [5784] [main][com.netflix.discovery.DiscoveryClient:491]: Discovery Client initialized at timestamp 1605613064555 with initial instances count: 3
+19:37:44.561  INFO [pocket,,] [5784] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:41]: Registering application PAYMENT with eureka with status UP
+19:37:44.593  INFO [pocket,,] [5784] [main][org.xnio.Xnio:95]: XNIO version 3.8.0.Final
+19:37:44.610  INFO [pocket,,] [5784] [main][org.xnio.nio.NioXnio:59]: XNIO NIO Implementation Version 3.8.0.Final
+19:37:44.773  INFO [pocket,,] [5784] [main][org.jboss.threads.Version:52]: JBoss Threads version 3.1.0.Final
+19:37:45.146  INFO [pocket,,] [5784] [main][io.undertow.Undertow:117]: starting server: Undertow - 2.1.3.Final
+19:37:45.278  INFO [pocket,,] [5784] [main][org.springframework.boot.web.embedded.undertow.UndertowWebServer:133]: Undertow started on port(s) 8144 (http)
+19:37:45.280  INFO [pocket,,] [5784] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration:145]: Updating port to 8144
+19:37:47.816  INFO [pocket,,] [5784] [main][org.springframework.boot.StartupInfoLogger:61]: Started PaymentApplication in 13.114 seconds (JVM running for 14.606)
+19:37:49.642  INFO [pocket,,] [5784] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:894]: DiscoveryClient_PAYMENT/47.98.120.110:8144 - Re-registering apps/PAYMENT
+19:37:49.643  INFO [pocket,,] [5784] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:870]: DiscoveryClient_PAYMENT/47.98.120.110:8144: registering service...
+19:37:49.779  INFO [pocket,,] [5784] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:879]: DiscoveryClient_PAYMENT/47.98.120.110:8144 - registration status: 204
+19:38:59.952  INFO [pocket,,] [5784] [XNIO-2 task-1][io.undertow.servlet.spec.ServletContextImpl:364]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:38:59.952  INFO [pocket,,] [5784] [XNIO-2 task-1][org.springframework.web.servlet.FrameworkServlet:525]: Initializing Servlet 'dispatcherServlet'
+19:38:59.954  INFO [pocket,,] [5784] [XNIO-2 task-1][org.springframework.web.servlet.FrameworkServlet:547]: Completed initialization in 1 ms

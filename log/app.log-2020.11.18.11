@@ -1,0 +1,87 @@
+11:03:29.284  INFO [pocket,,] [2108] [background-preinit][org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 6.1.5.Final
+11:03:29.351  INFO [pocket,,] [2108] [main][org.springframework.boot.StartupInfoLogger:55]: Starting PaymentApplication using Java 11 on DESKTOP-O164E7I with PID 2108 (D:\springcloud workplace\payment\target\classes started by black in D:\springcloud workplace\payment)
+11:03:29.355  INFO [pocket,,] [2108] [main][org.springframework.boot.SpringApplication:652]: No active profile set, falling back to default profiles: default
+11:03:30.298  INFO [pocket,,] [2108] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:252]: Multiple Spring Data modules found, entering strict repository configuration mode!
+11:03:30.300  INFO [pocket,,] [2108] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:130]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:03:30.322  INFO [pocket,,] [2108] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:190]: Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+11:03:30.529  INFO [pocket,,] [2108] [main][org.springframework.cloud.context.scope.GenericScope:295]: BeanFactory id=8fc6abd9-d8b2-3636-a7b9-029aaa54c610
+11:03:30.740  WARN [pocket,,] [2108] [main][io.undertow.websockets.jsr.Bootstrap:68]: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+11:03:30.761  INFO [pocket,,] [2108] [main][io.undertow.servlet.spec.ServletContextImpl:364]: Initializing Spring embedded WebApplicationContext
+11:03:30.762  INFO [pocket,,] [2108] [main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289]: Root WebApplicationContext: initialization completed in 1344 ms
+11:03:31.432  INFO [pocket,,] [2108] [main][org.redisson.Version:41]: Redisson 3.11.5
+11:03:32.562  INFO [pocket,,] [2108] [redisson-netty-4-27][org.redisson.connection.pool.ConnectionPool$1:168]: 1 connections initialized for 10.238.8.204/10.238.8.204:6379
+11:03:34.666  INFO [pocket,,] [2108] [redisson-netty-4-19][org.redisson.connection.pool.ConnectionPool$1:168]: 24 connections initialized for 10.238.8.204/10.238.8.204:6379
+11:03:34.952  INFO [pocket,,] [2108] [main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181]: Initializing ExecutorService 'applicationTaskExecutor'
+11:03:35.526  INFO [pocket,,] [2108] [main][org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration:67]: Eureka HTTP Client uses RestTemplate.
+11:03:36.163  INFO [pocket,,] [2108] [main][org.springframework.cloud.netflix.eureka.InstanceInfoFactory:78]: Setting initial instance status as: UP. This may be too early for the instance to advertise itself as available. You would instead want to control this via a healthcheck handler.
+11:03:36.209  INFO [pocket,,] [2108] [main][com.netflix.discovery.DiscoveryClient:371]: Initializing Eureka in region us-east-1
+11:03:36.215  INFO [pocket,,] [2108] [main][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43]: Resolving eureka endpoints via configuration
+11:03:36.605  INFO [pocket,,] [2108] [main][com.netflix.discovery.DiscoveryClient:1004]: Disable delta property : false
+11:03:36.605  INFO [pocket,,] [2108] [main][com.netflix.discovery.DiscoveryClient:1005]: Single vip registry refresh property : null
+11:03:36.605  INFO [pocket,,] [2108] [main][com.netflix.discovery.DiscoveryClient:1006]: Force full registry fetch : false
+11:03:36.605  INFO [pocket,,] [2108] [main][com.netflix.discovery.DiscoveryClient:1007]: Application is null : false
+11:03:36.605  INFO [pocket,,] [2108] [main][com.netflix.discovery.DiscoveryClient:1008]: Registered Applications size is zero : true
+11:03:36.606  INFO [pocket,,] [2108] [main][com.netflix.discovery.DiscoveryClient:1010]: Application version is -1: true
+11:03:36.606  INFO [pocket,,] [2108] [main][com.netflix.discovery.DiscoveryClient:1093]: Getting all instance registry info from the eureka server
+11:03:37.323  INFO [pocket,,] [2108] [main][com.netflix.discovery.DiscoveryClient:1102]: The response status is 200
+11:03:37.326  INFO [pocket,,] [2108] [main][com.netflix.discovery.DiscoveryClient:1317]: Starting heartbeat executor: renew interval is: 5
+11:03:37.338  INFO [pocket,,] [2108] [main][com.netflix.discovery.InstanceInfoReplicator:60]: InstanceInfoReplicator onDemand update allowed rate per min is 4
+11:03:37.367  INFO [pocket,,] [2108] [main][com.netflix.discovery.DiscoveryClient:491]: Discovery Client initialized at timestamp 1605668617342 with initial instances count: 3
+11:03:37.369  INFO [pocket,,] [2108] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:41]: Registering application PAYMENT with eureka with status UP
+11:03:37.399  INFO [pocket,,] [2108] [main][org.xnio.Xnio:95]: XNIO version 3.8.0.Final
+11:03:37.415  INFO [pocket,,] [2108] [main][org.xnio.nio.NioXnio:59]: XNIO NIO Implementation Version 3.8.0.Final
+11:03:37.450  INFO [pocket,,] [2108] [main][org.jboss.threads.Version:52]: JBoss Threads version 3.1.0.Final
+11:03:37.491  INFO [pocket,,] [2108] [main][io.undertow.Undertow:117]: starting server: Undertow - 2.1.3.Final
+11:03:37.542  INFO [pocket,,] [2108] [main][org.springframework.boot.web.embedded.undertow.UndertowWebServer:133]: Undertow started on port(s) 8144 (http)
+11:03:37.543  INFO [pocket,,] [2108] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration:145]: Updating port to 8144
+11:03:39.038  INFO [pocket,,] [2108] [main][org.springframework.boot.StartupInfoLogger:61]: Started PaymentApplication in 10.52 seconds (JVM running for 11.99)
+11:03:42.458  INFO [pocket,,] [2108] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:894]: DiscoveryClient_PAYMENT/47.98.120.110:8144 - Re-registering apps/PAYMENT
+11:03:42.459  INFO [pocket,,] [2108] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:870]: DiscoveryClient_PAYMENT/47.98.120.110:8144: registering service...
+11:03:42.580  INFO [pocket,,] [2108] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:879]: DiscoveryClient_PAYMENT/47.98.120.110:8144 - registration status: 204
+11:03:58.309  INFO [pocket,,] [2108] [XNIO-2 task-1][io.undertow.servlet.spec.ServletContextImpl:364]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:03:58.309  INFO [pocket,,] [2108] [XNIO-2 task-1][org.springframework.web.servlet.FrameworkServlet:525]: Initializing Servlet 'dispatcherServlet'
+11:03:58.310  INFO [pocket,,] [2108] [XNIO-2 task-1][org.springframework.web.servlet.FrameworkServlet:547]: Completed initialization in 1 ms
+11:23:06.442  INFO [pocket,,] [20324] [background-preinit][org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 6.1.5.Final
+11:23:06.498  INFO [pocket,,] [20324] [main][org.springframework.boot.StartupInfoLogger:55]: Starting PaymentApplication using Java 11 on DESKTOP-O164E7I with PID 20324 (D:\springcloud workplace\payment\target\classes started by black in D:\springcloud workplace\payment)
+11:23:06.502  INFO [pocket,,] [20324] [main][org.springframework.boot.SpringApplication:652]: No active profile set, falling back to default profiles: default
+11:23:07.470  INFO [pocket,,] [20324] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:252]: Multiple Spring Data modules found, entering strict repository configuration mode!
+11:23:07.473  INFO [pocket,,] [20324] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:130]: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:23:07.493  INFO [pocket,,] [20324] [main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:190]: Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+11:23:13.009  INFO [pocket,,] [20324] [main][org.springframework.cloud.context.scope.GenericScope:295]: BeanFactory id=b4fc9e7f-185e-3eb7-9a7f-bacc7da91c52
+11:23:13.247  WARN [pocket,,] [20324] [main][io.undertow.websockets.jsr.Bootstrap:68]: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+11:23:13.276  INFO [pocket,,] [20324] [main][io.undertow.servlet.spec.ServletContextImpl:364]: Initializing Spring embedded WebApplicationContext
+11:23:13.276  INFO [pocket,,] [20324] [main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289]: Root WebApplicationContext: initialization completed in 6692 ms
+11:23:13.984  INFO [pocket,,] [20324] [main][org.redisson.Version:41]: Redisson 3.11.5
+11:23:15.259  INFO [pocket,,] [20324] [redisson-netty-4-12][org.redisson.connection.pool.ConnectionPool$1:168]: 1 connections initialized for 10.238.8.204/10.238.8.204:6379
+11:23:15.284  INFO [pocket,,] [20324] [redisson-netty-4-19][org.redisson.connection.pool.ConnectionPool$1:168]: 24 connections initialized for 10.238.8.204/10.238.8.204:6379
+11:23:15.640  INFO [pocket,,] [20324] [main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181]: Initializing ExecutorService 'applicationTaskExecutor'
+11:23:16.362  INFO [pocket,,] [20324] [main][org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration:67]: Eureka HTTP Client uses RestTemplate.
+11:23:16.834  INFO [pocket,,] [20324] [main][org.springframework.cloud.netflix.eureka.InstanceInfoFactory:78]: Setting initial instance status as: UP. This may be too early for the instance to advertise itself as available. You would instead want to control this via a healthcheck handler.
+11:23:16.868  INFO [pocket,,] [20324] [main][com.netflix.discovery.DiscoveryClient:371]: Initializing Eureka in region us-east-1
+11:23:16.872  INFO [pocket,,] [20324] [main][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43]: Resolving eureka endpoints via configuration
+11:23:17.150  INFO [pocket,,] [20324] [main][com.netflix.discovery.DiscoveryClient:1004]: Disable delta property : false
+11:23:17.150  INFO [pocket,,] [20324] [main][com.netflix.discovery.DiscoveryClient:1005]: Single vip registry refresh property : null
+11:23:17.151  INFO [pocket,,] [20324] [main][com.netflix.discovery.DiscoveryClient:1006]: Force full registry fetch : false
+11:23:17.151  INFO [pocket,,] [20324] [main][com.netflix.discovery.DiscoveryClient:1007]: Application is null : false
+11:23:17.151  INFO [pocket,,] [20324] [main][com.netflix.discovery.DiscoveryClient:1008]: Registered Applications size is zero : true
+11:23:17.151  INFO [pocket,,] [20324] [main][com.netflix.discovery.DiscoveryClient:1010]: Application version is -1: true
+11:23:17.151  INFO [pocket,,] [20324] [main][com.netflix.discovery.DiscoveryClient:1093]: Getting all instance registry info from the eureka server
+11:23:17.439  INFO [pocket,,] [20324] [main][com.netflix.discovery.DiscoveryClient:1102]: The response status is 200
+11:23:17.441  INFO [pocket,,] [20324] [main][com.netflix.discovery.DiscoveryClient:1317]: Starting heartbeat executor: renew interval is: 5
+11:23:17.445  INFO [pocket,,] [20324] [main][com.netflix.discovery.InstanceInfoReplicator:60]: InstanceInfoReplicator onDemand update allowed rate per min is 4
+11:23:17.452  INFO [pocket,,] [20324] [main][com.netflix.discovery.DiscoveryClient:491]: Discovery Client initialized at timestamp 1605669797450 with initial instances count: 3
+11:23:17.453  INFO [pocket,,] [20324] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:41]: Registering application PAYMENT with eureka with status UP
+11:23:17.469  INFO [pocket,,] [20324] [main][org.xnio.Xnio:95]: XNIO version 3.8.0.Final
+11:23:17.478  INFO [pocket,,] [20324] [main][org.xnio.nio.NioXnio:59]: XNIO NIO Implementation Version 3.8.0.Final
+11:23:17.506  INFO [pocket,,] [20324] [main][org.jboss.threads.Version:52]: JBoss Threads version 3.1.0.Final
+11:23:17.544  INFO [pocket,,] [20324] [main][io.undertow.Undertow:117]: starting server: Undertow - 2.1.3.Final
+11:23:17.606  INFO [pocket,,] [20324] [main][org.springframework.boot.web.embedded.undertow.UndertowWebServer:133]: Undertow started on port(s) 8144 (http)
+11:23:17.607  INFO [pocket,,] [20324] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration:145]: Updating port to 8144
+11:23:19.260  INFO [pocket,,] [20324] [main][org.springframework.boot.StartupInfoLogger:61]: Started PaymentApplication in 13.535 seconds (JVM running for 15.851)
+11:23:22.536  INFO [pocket,,] [20324] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:894]: DiscoveryClient_PAYMENT/47.98.120.110:8144 - Re-registering apps/PAYMENT
+11:23:22.537  INFO [pocket,,] [20324] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:870]: DiscoveryClient_PAYMENT/47.98.120.110:8144: registering service...
+11:23:22.674  INFO [pocket,,] [20324] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:879]: DiscoveryClient_PAYMENT/47.98.120.110:8144 - registration status: 204
+11:25:20.738  INFO [pocket,,] [20324] [redisMessageListenerContainer-2][com.hope.payment.cache.redis.subscribe.RedisMsgListener:25]: hhhhh 123,[109, 109]
+11:25:20.739  INFO [pocket,,] [20324] [redisMessageListenerContainer-2][com.hope.payment.cache.redis.subscribe.RedisMsgListener:28]: hhhhh mm,123
+11:25:58.089  INFO [pocket,,] [20324] [redisMessageListenerContainer-3][com.hope.payment.cache.redis.subscribe.RedisMsgListener:25]: hhhhh 345,[110, 110]
+11:25:58.090  INFO [pocket,,] [20324] [redisMessageListenerContainer-3][com.hope.payment.cache.redis.subscribe.RedisMsgListener:28]: hhhhh nn,345

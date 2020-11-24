@@ -1,0 +1,77 @@
+#server port config
+server:
+    port: 8144
+    undertow:
+        accesslog:
+            dir: ./log/${LOCAL_IP}
+            enabled: true
+            pattern: '[%{time,yyyy-MM-dd HH:mm:ss.S z}] %m %U "%q" %s %D %b %{i,X-B3-TraceId},%{i,X-B3-SpanId}
+                %{i,X-Real-IP} %{i,Referer} "%{i,User-Agent}" %{i,Platform} %l %u
+                %I %v %a'
+            prefix: access.
+        buffer-size: 1024
+        directBuffers: true
+        io-threads: 32
+        worker-threads: 512
+
+#eureka config
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://47.98.120.110:12123/eureka/
+  
+    # eureka client刷新本地缓存时间
+    # 默认30s
+    registry-fetch-interval-seconds: 5
+  instance:
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+    prefer-ip-address: true
+    ip-address: 47.98.120.110
+    instance-id: ${eureka.instance.ip-address}:${server.port}
+    # app名称，不填写在Spring-cloud-netflix体系下默认就是spring.application.name
+    appname: ${spring.application.name}
+    # 目前没啥卵用，可以用这个扩展一些功能
+    #    app-group-name:
+    # 主机名称，如果不填写，就通过org.springframework.cloud.commons.util.InetUtils从网卡读取，如果填写了，则会覆盖，并ip-address也需要设置
+    #    hostname:
+    # ip名称，如果不填写，就通过org.springframework.cloud.commons.util.InetUtils从网卡读取，如果填写了，则会覆盖，并hostname也需要设置
+    #    ip-address:
+    # 是否注册到Eureka就是UP的状态，如果标记为false，那么在注册到Eureka上面的时候就是Starting状态而不是UP状态，参考源码：`com.netflix.appinfo.providers.EurekaConfigBasedInstanceInfoProvider`
+    # 之后我们会想到一个问题，就是什么时候才将
+    instanceEnabledOnit: true
+    non-secure-port: ${server.port}
+    metadata-map:
+      zone: ng-online
+
+
+#spring config
+spring:
+  application:
+    name: payment
+    
+    
+################ redis相关配置 ################
+  redis:
+    host: 10.238.8.204
+    lettuce:
+      pool:
+        max-active: 50
+        max-idle: 10
+        max-wait: -1
+        min-idle: 0
+    port: 6379
+    timeout: 60000
+    
+
+#rocketmq配置
+rocketmq:
+  name-server: 10.238.9.196:9876
+  producer:
+    group: ${spring.application.name}
+    sendMessageTimeout: 3000
+   
+   
+    
+

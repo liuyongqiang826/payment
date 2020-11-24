@@ -1,0 +1,670 @@
+15:08:10.325  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractTestContextBootstrapper:308]: Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hope.PaymentApplicationTests], using SpringBootContextLoader
+15:08:10.338  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractContextLoader:264]: Could not detect default resource locations for test class [com.hope.PaymentApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:08:10.339  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83]: Could not detect default configuration classes for test class [com.hope.PaymentApplicationTests]: PaymentApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:08:10.473  INFO [pocket,,] [${sys:PID}] [main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper:237]: Found @SpringBootConfiguration com.hope.PaymentApplication for test class com.hope.PaymentApplicationTests
+15:08:10.627  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractTestContextBootstrapper:248]: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+15:08:10.651  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractTestContextBootstrapper:177]: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@37c5fc56, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1c025cb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@50825a02, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@68809cc7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@703feacd, org.springframework.test.context.event.EventPublishingTestExecutionListener@7051777c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3241713e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ecba515, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@512d4583, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2abc224d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13cd7ea5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@102d92c4]
+15:08:11.249  INFO [pocket,,] [33072] [background-preinit][org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 6.1.5.Final
+15:08:11.324  INFO [pocket,,] [33072] [main][org.springframework.boot.StartupInfoLogger:55]: Starting PaymentApplicationTests using Java 11 on DESKTOP-O164E7I with PID 33072 (started by black in D:\springcloud workplace\payment)
+15:08:11.329  INFO [pocket,,] [33072] [main][org.springframework.boot.SpringApplication:652]: No active profile set, falling back to default profiles: default
+15:08:12.454  INFO [pocket,,] [33072] [main][org.springframework.cloud.context.scope.GenericScope:295]: BeanFactory id=127d68af-d232-38f0-8f48-64a47d598fd7
+15:08:13.352  INFO [pocket,,] [33072] [main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181]: Initializing ExecutorService 'applicationTaskExecutor'
+15:08:14.192  INFO [pocket,,] [33072] [main][org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration:67]: Eureka HTTP Client uses RestTemplate.
+15:08:14.875  WARN [pocket,,] [33072] [main][org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+15:08:14.905  INFO [pocket,,] [33072] [main][org.springframework.cloud.netflix.eureka.InstanceInfoFactory:78]: Setting initial instance status as: UP. This may be too early for the instance to advertise itself as available. You would instead want to control this via a healthcheck handler.
+15:08:14.958  INFO [pocket,,] [33072] [main][com.netflix.discovery.DiscoveryClient:371]: Initializing Eureka in region us-east-1
+15:08:14.965  INFO [pocket,,] [33072] [main][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43]: Resolving eureka endpoints via configuration
+15:08:15.169  INFO [pocket,,] [33072] [main][com.netflix.discovery.DiscoveryClient:1004]: Disable delta property : false
+15:08:15.169  INFO [pocket,,] [33072] [main][com.netflix.discovery.DiscoveryClient:1005]: Single vip registry refresh property : null
+15:08:15.169  INFO [pocket,,] [33072] [main][com.netflix.discovery.DiscoveryClient:1006]: Force full registry fetch : false
+15:08:15.169  INFO [pocket,,] [33072] [main][com.netflix.discovery.DiscoveryClient:1007]: Application is null : false
+15:08:15.169  INFO [pocket,,] [33072] [main][com.netflix.discovery.DiscoveryClient:1008]: Registered Applications size is zero : true
+15:08:15.169  INFO [pocket,,] [33072] [main][com.netflix.discovery.DiscoveryClient:1010]: Application version is -1: true
+15:08:15.169  INFO [pocket,,] [33072] [main][com.netflix.discovery.DiscoveryClient:1093]: Getting all instance registry info from the eureka server
+15:08:15.393  INFO [pocket,,] [33072] [main][com.netflix.discovery.DiscoveryClient:1102]: The response status is 200
+15:08:15.395  INFO [pocket,,] [33072] [main][com.netflix.discovery.DiscoveryClient:1317]: Starting heartbeat executor: renew interval is: 5
+15:08:15.397  INFO [pocket,,] [33072] [main][com.netflix.discovery.InstanceInfoReplicator:60]: InstanceInfoReplicator onDemand update allowed rate per min is 4
+15:08:15.402  INFO [pocket,,] [33072] [main][com.netflix.discovery.DiscoveryClient:491]: Discovery Client initialized at timestamp 1599116895401 with initial instances count: 1
+15:08:15.406  INFO [pocket,,] [33072] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:41]: Registering application PAYMENT with eureka with status UP
+15:08:15.423  INFO [pocket,,] [33072] [main][org.springframework.boot.StartupInfoLogger:61]: Started PaymentApplicationTests in 4.713 seconds (JVM running for 6.388)
+15:08:16.033  INFO [pocket,,] [33072] [SpringContextShutdownHook][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:65]: Unregistering application PAYMENT with eureka with status DOWN
+15:08:16.035  WARN [pocket,,] [33072] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient$3:1351]: Saw local status change event StatusChangeEvent [timestamp=1599116896034, current=DOWN, previous=UP]
+15:08:16.038  INFO [pocket,,] [33072] [DiscoveryClient-InstanceInfoReplicator-0][com.netflix.discovery.DiscoveryClient:870]: DiscoveryClient_PAYMENT/47.98.120.110:payment:8133: registering service...
+15:08:16.041  INFO [pocket,,] [33072] [SpringContextShutdownHook][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:218]: Shutting down ExecutorService 'applicationTaskExecutor'
+15:08:16.044  INFO [pocket,,] [33072] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:932]: Shutting down DiscoveryClient ...
+15:08:16.163  INFO [pocket,,] [33072] [DiscoveryClient-InstanceInfoReplicator-0][com.netflix.discovery.DiscoveryClient:879]: DiscoveryClient_PAYMENT/47.98.120.110:payment:8133 - registration status: 204
+15:08:16.165  INFO [pocket,,] [33072] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:968]: Unregistering ...
+15:08:16.195  INFO [pocket,,] [33072] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:970]: DiscoveryClient_PAYMENT/47.98.120.110:payment:8133 - deregister  status: 200
+15:08:16.200  INFO [pocket,,] [33072] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:957]: Completed shut down of DiscoveryClient
+15:18:36.258  INFO [pocket,,] [33552] [background-preinit][org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 6.1.5.Final
+15:18:36.294  INFO [pocket,,] [33552] [main][org.springframework.boot.StartupInfoLogger:55]: Starting PaymentApplication using Java 11 on DESKTOP-O164E7I with PID 33552 (D:\springcloud workplace\payment\target\classes started by black in D:\springcloud workplace\payment)
+15:18:36.297  INFO [pocket,,] [33552] [main][org.springframework.boot.SpringApplication:652]: No active profile set, falling back to default profiles: default
+15:18:36.953  INFO [pocket,,] [33552] [main][org.springframework.cloud.context.scope.GenericScope:295]: BeanFactory id=eafe7ce9-1057-31c1-aa32-c9998dfe643b
+15:18:37.104  WARN [pocket,,] [33552] [main][io.undertow.websockets.jsr.Bootstrap:68]: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+15:18:37.120  INFO [pocket,,] [33552] [main][io.undertow.servlet.spec.ServletContextImpl:364]: Initializing Spring embedded WebApplicationContext
+15:18:37.120  INFO [pocket,,] [33552] [main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289]: Root WebApplicationContext: initialization completed in 792 ms
+15:18:37.312  INFO [pocket,,] [33552] [main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181]: Initializing ExecutorService 'applicationTaskExecutor'
+15:18:37.765  INFO [pocket,,] [33552] [main][org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration:67]: Eureka HTTP Client uses RestTemplate.
+15:18:38.102  WARN [pocket,,] [33552] [main][org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+15:18:38.169  INFO [pocket,,] [33552] [main][org.springframework.cloud.netflix.eureka.InstanceInfoFactory:78]: Setting initial instance status as: UP. This may be too early for the instance to advertise itself as available. You would instead want to control this via a healthcheck handler.
+15:18:38.190  INFO [pocket,,] [33552] [main][com.netflix.discovery.DiscoveryClient:371]: Initializing Eureka in region us-east-1
+15:18:38.192  INFO [pocket,,] [33552] [main][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43]: Resolving eureka endpoints via configuration
+15:18:38.384  INFO [pocket,,] [33552] [main][com.netflix.discovery.DiscoveryClient:1004]: Disable delta property : false
+15:18:38.385  INFO [pocket,,] [33552] [main][com.netflix.discovery.DiscoveryClient:1005]: Single vip registry refresh property : null
+15:18:38.385  INFO [pocket,,] [33552] [main][com.netflix.discovery.DiscoveryClient:1006]: Force full registry fetch : false
+15:18:38.385  INFO [pocket,,] [33552] [main][com.netflix.discovery.DiscoveryClient:1007]: Application is null : false
+15:18:38.385  INFO [pocket,,] [33552] [main][com.netflix.discovery.DiscoveryClient:1008]: Registered Applications size is zero : true
+15:18:38.385  INFO [pocket,,] [33552] [main][com.netflix.discovery.DiscoveryClient:1010]: Application version is -1: true
+15:18:38.386  INFO [pocket,,] [33552] [main][com.netflix.discovery.DiscoveryClient:1093]: Getting all instance registry info from the eureka server
+15:18:38.624  INFO [pocket,,] [33552] [main][com.netflix.discovery.DiscoveryClient:1102]: The response status is 200
+15:18:38.625  INFO [pocket,,] [33552] [main][com.netflix.discovery.DiscoveryClient:1317]: Starting heartbeat executor: renew interval is: 5
+15:18:38.627  INFO [pocket,,] [33552] [main][com.netflix.discovery.InstanceInfoReplicator:60]: InstanceInfoReplicator onDemand update allowed rate per min is 4
+15:18:38.632  INFO [pocket,,] [33552] [main][com.netflix.discovery.DiscoveryClient:491]: Discovery Client initialized at timestamp 1599117518631 with initial instances count: 3
+15:18:38.633  INFO [pocket,,] [33552] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:41]: Registering application PAYMENT with eureka with status UP
+15:18:38.644  INFO [pocket,,] [33552] [main][org.xnio.Xnio:95]: XNIO version 3.8.0.Final
+15:18:38.655  INFO [pocket,,] [33552] [main][org.xnio.nio.NioXnio:59]: XNIO NIO Implementation Version 3.8.0.Final
+15:18:38.687  INFO [pocket,,] [33552] [main][org.jboss.threads.Version:52]: JBoss Threads version 3.1.0.Final
+15:18:38.710  INFO [pocket,,] [33552] [main][io.undertow.Undertow:117]: starting server: Undertow - 2.1.3.Final
+15:18:38.747  INFO [pocket,,] [33552] [main][org.springframework.boot.web.embedded.undertow.UndertowWebServer:133]: Undertow started on port(s) 8133 (http)
+15:18:38.747  INFO [pocket,,] [33552] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration:145]: Updating port to 8133
+15:18:39.029  INFO [pocket,,] [33552] [main][org.springframework.boot.StartupInfoLogger:61]: Started PaymentApplication in 3.33 seconds (JVM running for 4.522)
+15:18:43.716  INFO [pocket,,] [33552] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:894]: DiscoveryClient_PAYMENT/10.0.0.11:payment:8133 - Re-registering apps/PAYMENT
+15:18:43.716  INFO [pocket,,] [33552] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:870]: DiscoveryClient_PAYMENT/10.0.0.11:payment:8133: registering service...
+15:18:43.800  INFO [pocket,,] [33552] [DiscoveryClient-HeartbeatExecutor-0][com.netflix.discovery.DiscoveryClient:879]: DiscoveryClient_PAYMENT/10.0.0.11:payment:8133 - registration status: 204
+15:21:24.215  INFO [pocket,,] [33552] [RMI TCP Connection(3)-127.0.0.1][org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:159]: Application shutdown requested.
+15:21:24.216  INFO [pocket,,] [33552] [RMI TCP Connection(3)-127.0.0.1][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:65]: Unregistering application PAYMENT with eureka with status DOWN
+15:21:24.216  WARN [pocket,,] [33552] [RMI TCP Connection(3)-127.0.0.1][com.netflix.discovery.DiscoveryClient$3:1351]: Saw local status change event StatusChangeEvent [timestamp=1599117684216, current=DOWN, previous=UP]
+15:21:24.217  INFO [pocket,,] [33552] [DiscoveryClient-InstanceInfoReplicator-0][com.netflix.discovery.DiscoveryClient:870]: DiscoveryClient_PAYMENT/10.0.0.11:payment:8133: registering service...
+15:21:24.220  INFO [pocket,,] [33552] [RMI TCP Connection(3)-127.0.0.1][io.undertow.Undertow:252]: stopping server: Undertow - 2.1.3.Final
+15:21:24.235  INFO [pocket,,] [33552] [RMI TCP Connection(3)-127.0.0.1][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:218]: Shutting down ExecutorService 'applicationTaskExecutor'
+15:21:24.236  INFO [pocket,,] [33552] [RMI TCP Connection(3)-127.0.0.1][com.netflix.discovery.DiscoveryClient:932]: Shutting down DiscoveryClient ...
+15:21:24.249  INFO [pocket,,] [33552] [DiscoveryClient-InstanceInfoReplicator-0][com.netflix.discovery.DiscoveryClient:879]: DiscoveryClient_PAYMENT/10.0.0.11:payment:8133 - registration status: 204
+15:21:24.251  INFO [pocket,,] [33552] [RMI TCP Connection(3)-127.0.0.1][com.netflix.discovery.DiscoveryClient:968]: Unregistering ...
+15:21:24.281  INFO [pocket,,] [33552] [RMI TCP Connection(3)-127.0.0.1][com.netflix.discovery.DiscoveryClient:970]: DiscoveryClient_PAYMENT/10.0.0.11:payment:8133 - deregister  status: 200
+15:21:24.285  INFO [pocket,,] [33552] [RMI TCP Connection(3)-127.0.0.1][com.netflix.discovery.DiscoveryClient:957]: Completed shut down of DiscoveryClient
+15:45:59.340  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractTestContextBootstrapper:308]: Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hope.PaymentApplicationTests], using SpringBootContextLoader
+15:45:59.355  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractContextLoader:264]: Could not detect default resource locations for test class [com.hope.PaymentApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:45:59.362  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83]: Could not detect default configuration classes for test class [com.hope.PaymentApplicationTests]: PaymentApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:45:59.505  INFO [pocket,,] [${sys:PID}] [main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper:237]: Found @SpringBootConfiguration com.hope.PaymentApplication for test class com.hope.PaymentApplicationTests
+15:45:59.690  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractTestContextBootstrapper:248]: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+15:45:59.707  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractTestContextBootstrapper:177]: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@37c5fc56, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1c025cb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@50825a02, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@68809cc7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@703feacd, org.springframework.test.context.event.EventPublishingTestExecutionListener@7051777c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3241713e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ecba515, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@512d4583, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2abc224d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13cd7ea5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@102d92c4]
+15:46:00.336  INFO [pocket,,] [19224] [background-preinit][org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 6.1.5.Final
+15:46:00.405  INFO [pocket,,] [19224] [main][org.springframework.boot.StartupInfoLogger:55]: Starting PaymentApplicationTests using Java 11 on DESKTOP-O164E7I with PID 19224 (started by black in D:\springcloud workplace\payment)
+15:46:00.410  INFO [pocket,,] [19224] [main][org.springframework.boot.SpringApplication:652]: No active profile set, falling back to default profiles: default
+15:46:01.704  INFO [pocket,,] [19224] [main][org.springframework.cloud.context.scope.GenericScope:295]: BeanFactory id=127d68af-d232-38f0-8f48-64a47d598fd7
+15:46:02.596  INFO [pocket,,] [19224] [main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181]: Initializing ExecutorService 'applicationTaskExecutor'
+15:46:03.531  INFO [pocket,,] [19224] [main][org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration:67]: Eureka HTTP Client uses RestTemplate.
+15:46:04.144  WARN [pocket,,] [19224] [main][org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+15:46:04.180  INFO [pocket,,] [19224] [main][org.springframework.cloud.netflix.eureka.InstanceInfoFactory:78]: Setting initial instance status as: UP. This may be too early for the instance to advertise itself as available. You would instead want to control this via a healthcheck handler.
+15:46:04.237  INFO [pocket,,] [19224] [main][com.netflix.discovery.DiscoveryClient:371]: Initializing Eureka in region us-east-1
+15:46:04.244  INFO [pocket,,] [19224] [main][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43]: Resolving eureka endpoints via configuration
+15:46:04.501  INFO [pocket,,] [19224] [main][com.netflix.discovery.DiscoveryClient:1004]: Disable delta property : false
+15:46:04.502  INFO [pocket,,] [19224] [main][com.netflix.discovery.DiscoveryClient:1005]: Single vip registry refresh property : null
+15:46:04.502  INFO [pocket,,] [19224] [main][com.netflix.discovery.DiscoveryClient:1006]: Force full registry fetch : false
+15:46:04.502  INFO [pocket,,] [19224] [main][com.netflix.discovery.DiscoveryClient:1007]: Application is null : false
+15:46:04.502  INFO [pocket,,] [19224] [main][com.netflix.discovery.DiscoveryClient:1008]: Registered Applications size is zero : true
+15:46:04.502  INFO [pocket,,] [19224] [main][com.netflix.discovery.DiscoveryClient:1010]: Application version is -1: true
+15:46:04.502  INFO [pocket,,] [19224] [main][com.netflix.discovery.DiscoveryClient:1093]: Getting all instance registry info from the eureka server
+15:46:25.704 ERROR [pocket,,] [19224] [main][com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient:83]: Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://www.dd.com:12123/eureka/}
+
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://www.dd.com:12123/eureka/apps/": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:704) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:595) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:158) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:146) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1097) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1011) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:440) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:282) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:278) ~[eureka-client-1.9.25.jar:1.9.25]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:67) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:316) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:389) ~[spring-cloud-context-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:186) ~[spring-cloud-context-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:129) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:117) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:499) ~[spring-cloud-context-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$dce7a26b.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:57) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:941) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:751) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:410) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:122) ~[spring-boot-test-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:99) ~[spring-test-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at java.util.Optional.orElseGet(Optional.java:369) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1540) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1540) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.PlainSocketImpl.connect0(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at java.net.Socket.connect(Socket.java:540) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:182) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:769) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	... 133 more
+
+15:46:25.705  WARN [pocket,,] [19224] [main][com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient:130]: Request execution failed with message: I/O error on GET request for "http://www.dd.com:12123/eureka/apps/": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+15:46:25.706 ERROR [pocket,,] [19224] [main][com.netflix.discovery.DiscoveryClient:1018]: DiscoveryClient_PAYMENT/10.0.0.11:payment:8133 - was unable to refresh its cache! status = Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1097) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1011) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:440) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:282) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:278) ~[eureka-client-1.9.25.jar:1.9.25]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:67) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:316) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:389) ~[spring-cloud-context-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:186) ~[spring-cloud-context-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:129) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:117) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:499) ~[spring-cloud-context-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$dce7a26b.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:57) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:941) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:751) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:410) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:122) ~[spring-boot-test-2.4.0-SNAPSHOT.jar:2.4.0-SNAPSHOT]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:99) ~[spring-test-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at java.util.Optional.orElseGet(Optional.java:369) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1540) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1540) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+
+15:46:25.706  INFO [pocket,,] [19224] [main][com.netflix.discovery.DiscoveryClient:442]: Initial registry fetch from primary servers failed
+15:46:25.706  WARN [pocket,,] [19224] [main][com.netflix.discovery.DiscoveryClient$1:303]: Using default backup registry implementation which does not do anything.
+15:46:25.708  INFO [pocket,,] [19224] [main][com.netflix.discovery.DiscoveryClient:447]: Initial registry fetch from backup servers failed
+15:46:25.711  INFO [pocket,,] [19224] [main][com.netflix.discovery.DiscoveryClient:1317]: Starting heartbeat executor: renew interval is: 5
+15:46:25.717  INFO [pocket,,] [19224] [main][com.netflix.discovery.InstanceInfoReplicator:60]: InstanceInfoReplicator onDemand update allowed rate per min is 4
+15:46:25.739  INFO [pocket,,] [19224] [main][com.netflix.discovery.DiscoveryClient:491]: Discovery Client initialized at timestamp 1599119185736 with initial instances count: 0
+15:46:25.745  INFO [pocket,,] [19224] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:41]: Registering application PAYMENT with eureka with status UP
+15:46:25.760  INFO [pocket,,] [19224] [main][org.springframework.boot.StartupInfoLogger:61]: Started PaymentApplicationTests in 26.006 seconds (JVM running for 27.812)
+15:46:26.149  INFO [pocket,,] [19224] [SpringContextShutdownHook][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:65]: Unregistering application PAYMENT with eureka with status DOWN
+15:46:26.151  WARN [pocket,,] [19224] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient$3:1351]: Saw local status change event StatusChangeEvent [timestamp=1599119186151, current=DOWN, previous=UP]
+15:46:26.154  INFO [pocket,,] [19224] [DiscoveryClient-InstanceInfoReplicator-0][com.netflix.discovery.DiscoveryClient:870]: DiscoveryClient_PAYMENT/10.0.0.11:payment:8133: registering service...
+15:46:26.156  INFO [pocket,,] [19224] [SpringContextShutdownHook][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:218]: Shutting down ExecutorService 'applicationTaskExecutor'
+15:46:26.160  INFO [pocket,,] [19224] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:932]: Shutting down DiscoveryClient ...
+15:46:29.164  INFO [pocket,,] [19224] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:968]: Unregistering ...
+15:46:47.214 ERROR [pocket,,] [19224] [DiscoveryClient-InstanceInfoReplicator-0][com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient:83]: Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://www.dd.com:12123/eureka/}
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://www.dd.com:12123/eureka/apps/PAYMENT": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:704) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:595) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:873) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.9.25.jar:1.9.25]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.PlainSocketImpl.connect0(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at java.net.Socket.connect(Socket.java:540) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:182) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:769) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	... 22 more
+
+15:46:47.214  WARN [pocket,,] [19224] [DiscoveryClient-InstanceInfoReplicator-0][com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient:130]: Request execution failed with message: I/O error on POST request for "http://www.dd.com:12123/eureka/apps/PAYMENT": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+15:46:47.214  WARN [pocket,,] [19224] [DiscoveryClient-InstanceInfoReplicator-0][com.netflix.discovery.DiscoveryClient:875]: DiscoveryClient_PAYMENT/10.0.0.11:payment:8133 - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:873) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.9.25.jar:1.9.25]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+
+15:46:47.214  WARN [pocket,,] [19224] [DiscoveryClient-InstanceInfoReplicator-0][com.netflix.discovery.InstanceInfoReplicator:125]: There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:873) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.9.25.jar:1.9.25]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+
+15:46:50.182 ERROR [pocket,,] [19224] [SpringContextShutdownHook][com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient:83]: Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://www.dd.com:12123/eureka/}
+
+org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://www.dd.com:12123/eureka/apps/PAYMENT/10.0.0.11:payment:8133": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:704) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:595) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:88) ~[spring-cloud-netflix-eureka-client-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:969) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:945) ~[eureka-client-1.9.25.jar:1.9.25]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403) ~[spring-cloud-context-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142) ~[spring-cloud-context-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1111) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1080) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:997) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.PlainSocketImpl.connect0(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at java.net.Socket.connect(Socket.java:540) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:182) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:769) ~[spring-web-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	... 35 more
+
+15:46:50.182  WARN [pocket,,] [19224] [SpringContextShutdownHook][com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient:130]: Request execution failed with message: I/O error on DELETE request for "http://www.dd.com:12123/eureka/apps/PAYMENT/10.0.0.11:payment:8133": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+15:46:50.182 ERROR [pocket,,] [19224] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:972]: DiscoveryClient_PAYMENT/10.0.0.11:payment:8133 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:969) ~[eureka-client-1.9.25.jar:1.9.25]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:945) ~[eureka-client-1.9.25.jar:1.9.25]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403) ~[spring-cloud-context-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142) ~[spring-cloud-context-3.0.0-SNAPSHOT.jar:3.0.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145) ~[spring-beans-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1111) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1080) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:997) ~[spring-context-5.3.0-SNAPSHOT.jar:5.3.0-SNAPSHOT]
+
+15:46:50.188  INFO [pocket,,] [19224] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:957]: Completed shut down of DiscoveryClient
+15:52:30.923  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractTestContextBootstrapper:308]: Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hope.PaymentApplicationTests], using SpringBootContextLoader
+15:52:30.936  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractContextLoader:264]: Could not detect default resource locations for test class [com.hope.PaymentApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:52:30.937  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83]: Could not detect default configuration classes for test class [com.hope.PaymentApplicationTests]: PaymentApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:52:31.046  INFO [pocket,,] [${sys:PID}] [main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper:237]: Found @SpringBootConfiguration com.hope.PaymentApplication for test class com.hope.PaymentApplicationTests
+15:52:31.204  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractTestContextBootstrapper:248]: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+15:52:31.222  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractTestContextBootstrapper:177]: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@37c5fc56, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1c025cb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@50825a02, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@68809cc7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@703feacd, org.springframework.test.context.event.EventPublishingTestExecutionListener@7051777c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3241713e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ecba515, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@512d4583, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2abc224d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13cd7ea5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@102d92c4]
+15:52:31.843  INFO [pocket,,] [16504] [background-preinit][org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 6.1.5.Final
+15:52:31.930  INFO [pocket,,] [16504] [main][org.springframework.boot.StartupInfoLogger:55]: Starting PaymentApplicationTests using Java 11 on DESKTOP-O164E7I with PID 16504 (started by black in D:\springcloud workplace\payment)
+15:52:31.935  INFO [pocket,,] [16504] [main][org.springframework.boot.SpringApplication:652]: No active profile set, falling back to default profiles: default
+15:52:33.054  INFO [pocket,,] [16504] [main][org.springframework.cloud.context.scope.GenericScope:295]: BeanFactory id=127d68af-d232-38f0-8f48-64a47d598fd7
+15:52:33.947  INFO [pocket,,] [16504] [main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181]: Initializing ExecutorService 'applicationTaskExecutor'
+15:52:34.905  INFO [pocket,,] [16504] [main][org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration:67]: Eureka HTTP Client uses RestTemplate.
+15:52:35.551  WARN [pocket,,] [16504] [main][org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+15:52:35.584  INFO [pocket,,] [16504] [main][org.springframework.cloud.netflix.eureka.InstanceInfoFactory:78]: Setting initial instance status as: UP. This may be too early for the instance to advertise itself as available. You would instead want to control this via a healthcheck handler.
+15:52:35.636  INFO [pocket,,] [16504] [main][com.netflix.discovery.DiscoveryClient:371]: Initializing Eureka in region us-east-1
+15:52:35.642  INFO [pocket,,] [16504] [main][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43]: Resolving eureka endpoints via configuration
+15:52:35.899  INFO [pocket,,] [16504] [main][com.netflix.discovery.DiscoveryClient:1004]: Disable delta property : false
+15:52:35.899  INFO [pocket,,] [16504] [main][com.netflix.discovery.DiscoveryClient:1005]: Single vip registry refresh property : null
+15:52:35.899  INFO [pocket,,] [16504] [main][com.netflix.discovery.DiscoveryClient:1006]: Force full registry fetch : false
+15:52:35.900  INFO [pocket,,] [16504] [main][com.netflix.discovery.DiscoveryClient:1007]: Application is null : false
+15:52:35.900  INFO [pocket,,] [16504] [main][com.netflix.discovery.DiscoveryClient:1008]: Registered Applications size is zero : true
+15:52:35.900  INFO [pocket,,] [16504] [main][com.netflix.discovery.DiscoveryClient:1010]: Application version is -1: true
+15:52:35.900  INFO [pocket,,] [16504] [main][com.netflix.discovery.DiscoveryClient:1093]: Getting all instance registry info from the eureka server
+15:52:36.125  INFO [pocket,,] [16504] [main][com.netflix.discovery.DiscoveryClient:1102]: The response status is 200
+15:52:36.129  INFO [pocket,,] [16504] [main][com.netflix.discovery.DiscoveryClient:1317]: Starting heartbeat executor: renew interval is: 5
+15:52:36.133  INFO [pocket,,] [16504] [main][com.netflix.discovery.InstanceInfoReplicator:60]: InstanceInfoReplicator onDemand update allowed rate per min is 4
+15:52:36.141  INFO [pocket,,] [16504] [main][com.netflix.discovery.DiscoveryClient:491]: Discovery Client initialized at timestamp 1599119556139 with initial instances count: 1
+15:52:36.146  INFO [pocket,,] [16504] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:41]: Registering application PAYMENT with eureka with status UP
+15:52:36.162  INFO [pocket,,] [16504] [main][org.springframework.boot.StartupInfoLogger:61]: Started PaymentApplicationTests in 4.887 seconds (JVM running for 6.651)
+15:52:36.693  INFO [pocket,,] [16504] [SpringContextShutdownHook][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:65]: Unregistering application PAYMENT with eureka with status DOWN
+15:52:36.694  WARN [pocket,,] [16504] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient$3:1351]: Saw local status change event StatusChangeEvent [timestamp=1599119556694, current=DOWN, previous=UP]
+15:52:36.696  INFO [pocket,,] [16504] [DiscoveryClient-InstanceInfoReplicator-0][com.netflix.discovery.DiscoveryClient:870]: DiscoveryClient_PAYMENT/47.98.120.110:8133: registering service...
+15:52:36.699  INFO [pocket,,] [16504] [SpringContextShutdownHook][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:218]: Shutting down ExecutorService 'applicationTaskExecutor'
+15:52:36.700  INFO [pocket,,] [16504] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:932]: Shutting down DiscoveryClient ...
+15:52:36.825  INFO [pocket,,] [16504] [DiscoveryClient-InstanceInfoReplicator-0][com.netflix.discovery.DiscoveryClient:879]: DiscoveryClient_PAYMENT/47.98.120.110:8133 - registration status: 204
+15:52:36.827  INFO [pocket,,] [16504] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:968]: Unregistering ...
+15:52:36.863  INFO [pocket,,] [16504] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:970]: DiscoveryClient_PAYMENT/47.98.120.110:8133 - deregister  status: 200
+15:52:36.869  INFO [pocket,,] [16504] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:957]: Completed shut down of DiscoveryClient
+15:59:35.773  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractTestContextBootstrapper:308]: Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hope.PaymentApplicationTests], using SpringBootContextLoader
+15:59:35.785  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractContextLoader:264]: Could not detect default resource locations for test class [com.hope.PaymentApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:59:35.786  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83]: Could not detect default configuration classes for test class [com.hope.PaymentApplicationTests]: PaymentApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:59:35.925  INFO [pocket,,] [${sys:PID}] [main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper:237]: Found @SpringBootConfiguration com.hope.PaymentApplication for test class com.hope.PaymentApplicationTests
+15:59:36.072  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractTestContextBootstrapper:248]: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+15:59:36.086  INFO [pocket,,] [${sys:PID}] [main][org.springframework.test.context.support.AbstractTestContextBootstrapper:177]: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@37c5fc56, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1c025cb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@50825a02, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@68809cc7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@703feacd, org.springframework.test.context.event.EventPublishingTestExecutionListener@7051777c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3241713e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ecba515, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@512d4583, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2abc224d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13cd7ea5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@102d92c4]
+15:59:36.704  INFO [pocket,,] [19836] [background-preinit][org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 6.1.5.Final
+15:59:36.794  INFO [pocket,,] [19836] [main][org.springframework.boot.StartupInfoLogger:55]: Starting PaymentApplicationTests using Java 11 on DESKTOP-O164E7I with PID 19836 (started by black in D:\springcloud workplace\payment)
+15:59:36.799  INFO [pocket,,] [19836] [main][org.springframework.boot.SpringApplication:652]: No active profile set, falling back to default profiles: default
+15:59:38.074  INFO [pocket,,] [19836] [main][org.springframework.cloud.context.scope.GenericScope:295]: BeanFactory id=127d68af-d232-38f0-8f48-64a47d598fd7
+15:59:39.023  INFO [pocket,,] [19836] [main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181]: Initializing ExecutorService 'applicationTaskExecutor'
+15:59:40.032  INFO [pocket,,] [19836] [main][org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration:67]: Eureka HTTP Client uses RestTemplate.
+15:59:40.498  WARN [pocket,,] [19836] [main][org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81]: Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+15:59:40.531  INFO [pocket,,] [19836] [main][org.springframework.cloud.netflix.eureka.InstanceInfoFactory:78]: Setting initial instance status as: UP. This may be too early for the instance to advertise itself as available. You would instead want to control this via a healthcheck handler.
+15:59:40.588  INFO [pocket,,] [19836] [main][com.netflix.discovery.DiscoveryClient:371]: Initializing Eureka in region us-east-1
+15:59:40.594  INFO [pocket,,] [19836] [main][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43]: Resolving eureka endpoints via configuration
+15:59:40.843  INFO [pocket,,] [19836] [main][com.netflix.discovery.DiscoveryClient:1004]: Disable delta property : false
+15:59:40.843  INFO [pocket,,] [19836] [main][com.netflix.discovery.DiscoveryClient:1005]: Single vip registry refresh property : null
+15:59:40.843  INFO [pocket,,] [19836] [main][com.netflix.discovery.DiscoveryClient:1006]: Force full registry fetch : false
+15:59:40.843  INFO [pocket,,] [19836] [main][com.netflix.discovery.DiscoveryClient:1007]: Application is null : false
+15:59:40.844  INFO [pocket,,] [19836] [main][com.netflix.discovery.DiscoveryClient:1008]: Registered Applications size is zero : true
+15:59:40.844  INFO [pocket,,] [19836] [main][com.netflix.discovery.DiscoveryClient:1010]: Application version is -1: true
+15:59:40.845  INFO [pocket,,] [19836] [main][com.netflix.discovery.DiscoveryClient:1093]: Getting all instance registry info from the eureka server
+15:59:41.095  INFO [pocket,,] [19836] [main][com.netflix.discovery.DiscoveryClient:1102]: The response status is 200
+15:59:41.099  INFO [pocket,,] [19836] [main][com.netflix.discovery.DiscoveryClient:1317]: Starting heartbeat executor: renew interval is: 5
+15:59:41.104  INFO [pocket,,] [19836] [main][com.netflix.discovery.InstanceInfoReplicator:60]: InstanceInfoReplicator onDemand update allowed rate per min is 4
+15:59:41.112  INFO [pocket,,] [19836] [main][com.netflix.discovery.DiscoveryClient:491]: Discovery Client initialized at timestamp 1599119981110 with initial instances count: 2
+15:59:41.116  INFO [pocket,,] [19836] [main][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:41]: Registering application PAYMENT with eureka with status UP
+15:59:41.134  INFO [pocket,,] [19836] [main][org.springframework.boot.StartupInfoLogger:61]: Started PaymentApplicationTests in 4.996 seconds (JVM running for 6.72)
+15:59:41.625  INFO [pocket,,] [19836] [SpringContextShutdownHook][org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry:65]: Unregistering application PAYMENT with eureka with status DOWN
+15:59:41.627  WARN [pocket,,] [19836] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient$3:1351]: Saw local status change event StatusChangeEvent [timestamp=1599119981627, current=DOWN, previous=UP]
+15:59:41.630  INFO [pocket,,] [19836] [DiscoveryClient-InstanceInfoReplicator-0][com.netflix.discovery.DiscoveryClient:870]: DiscoveryClient_PAYMENT/47.98.120.110:8144: registering service...
+15:59:41.632  INFO [pocket,,] [19836] [SpringContextShutdownHook][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:218]: Shutting down ExecutorService 'applicationTaskExecutor'
+15:59:41.639  INFO [pocket,,] [19836] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:932]: Shutting down DiscoveryClient ...
+15:59:41.710  INFO [pocket,,] [19836] [DiscoveryClient-InstanceInfoReplicator-0][com.netflix.discovery.DiscoveryClient:879]: DiscoveryClient_PAYMENT/47.98.120.110:8144 - registration status: 204
+15:59:41.713  INFO [pocket,,] [19836] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:968]: Unregistering ...
+15:59:41.751  INFO [pocket,,] [19836] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:970]: DiscoveryClient_PAYMENT/47.98.120.110:8144 - deregister  status: 200
+15:59:41.761  INFO [pocket,,] [19836] [SpringContextShutdownHook][com.netflix.discovery.DiscoveryClient:957]: Completed shut down of DiscoveryClient
